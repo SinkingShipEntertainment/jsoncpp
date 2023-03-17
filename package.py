@@ -61,8 +61,8 @@ def commands():
     env.JSONCPP_LOCATION.append("{root}")
 
     env.JSONCPP_INCLUDE_DIR = "{root}/include"
-    env.JSONCPP_LIBRARY_DIR = "{root}/lib"
+    env.JSONCPP_LIBRARY_DIR = "{root}/lib64"
 
-    env.PATH.append("{root}/lib")
-    env.LD_LIBRARY_PATH.append("{root}/lib")
+    env.PATH.append("{root}/lib64")
+    env.LD_LIBRARY_PATH.append("{root}/lib64")
 
