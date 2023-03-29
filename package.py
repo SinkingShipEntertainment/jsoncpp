@@ -4,7 +4,7 @@ authors = [
     "jsoncpp"
 ]
 
-version = "0.7.0.sse.1.0.0"
+version = "0.7.0.sse.1.0.1"
 
 description = \
     """
@@ -39,6 +39,10 @@ variants = [
 ]
 
 uuid = "repository.jsoncpp"
+
+# Pass cmake arguments (with debug symbols):
+# rez-build -i -- -DJSONCPP_LIB_BUILD_SHARED:BOOL=ON
+# rez-release -- -DJSONCPP_LIB_BUILD_SHARED:BOOL=ON
 
 def pre_build_commands():
     command("source /opt/rh/devtoolset-6/enable")
