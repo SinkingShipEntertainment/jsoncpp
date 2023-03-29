@@ -11,3 +11,7 @@
 /doc/doxyfile
 /dist/
 /include/json/version.h
+
+# SSE
+_rez_build
+.vscode
